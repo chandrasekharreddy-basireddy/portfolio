@@ -14,7 +14,7 @@
         university: "Sai University",
         email: "srinivasabasireddy06@gmail.com",
         github: "https://github.com/chandrasekharreddy-basireddy",
-        linkedin: null, // e.g. "https://www.linkedin.com/in/your-handle" — hidden until set
+        linkedin: "https://www.linkedin.com/in/chandra-sekhar-reddy-basireddy-5733a2385",
         resumePath: "assets/resume.pdf"
     };
 
