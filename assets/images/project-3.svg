@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="signal-lite cover artwork">
+  <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/></pattern></defs>
+  <rect width="800" height="500" fill="#101217"/>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#vign)"/>
+  <defs>
+    <radialGradient id="vign" cx="30%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#e5a54b" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#101217" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0c0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b0c0f" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  
+  <g>
+    <rect x="90" y="90" width="250" height="64" rx="14" fill="#1a1e25" stroke="#5fc9a9" stroke-opacity="0.55"/>
+    <rect x="110" y="112" width="150" height="5" rx="2.5" fill="#7b828e" opacity="0.5"/>
+    <rect x="110" y="126" width="100" height="5" rx="2.5" fill="#7b828e" opacity="0.3"/>
+    <rect x="230" y="180" width="250" height="64" rx="14" fill="#1a1e25" stroke="#e5a54b" stroke-opacity="0.55"/>
+    <rect x="250" y="202" width="170" height="5" rx="2.5" fill="#7b828e" opacity="0.5"/>
+    <rect x="250" y="216" width="120" height="5" rx="2.5" fill="#7b828e" opacity="0.3"/>
+    <rect x="140" y="270" width="210" height="64" rx="14" fill="#1a1e25" stroke="#7b828e" stroke-opacity="0.35"/>
+    <rect x="160" y="292" width="130" height="5" rx="2.5" fill="#7b828e" opacity="0.5"/>
+  </g>
+  <g transform="translate(560 190)">
+    <rect x="-34" y="-10" width="68" height="54" rx="10" fill="none" stroke="#e5a54b" stroke-width="2.5"/>
+    <path d="M-20 -10 v-12 a20 20 0 0 1 40 0 v12" fill="none" stroke="#e5a54b" stroke-width="2.5"/>
+    <circle cx="0" cy="12" r="5" fill="#e5a54b"/>
+    <rect x="-2.5" y="16" width="5" height="12" rx="2.5" fill="#e5a54b"/>
+  </g>
+  <g stroke="#5fc9a9" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M470 120 q20 -22 40 0 t 40 0"/>
+    <path d="M470 96 q30 -32 60 0 t 60 0" opacity="0.55"/>
+    <path d="M470 72 q40 -42 80 0 t 80 0" opacity="0.3"/>
+  </g>
+
+  <text x="36" y="470" font-family="monospace" font-size="15" letter-spacing="4" fill="#7b828e">SIGNAL-LITE</text>
+  <text x="740" y="72" text-anchor="end" font-family="monospace" font-size="15" letter-spacing="4" fill="#7b828e">03</text>
+</svg>
