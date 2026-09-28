@@ -207,16 +207,6 @@ p {
     margin-bottom: 1rem;
 }
 
-.eyebrow__num {
-    color: var(--text-muted);
-}
-
-.eyebrow__tick {
-    width: 1.75rem;
-    height: 1px;
-    background: var(--accent-primary);
-}
-
 .section-head {
     margin-bottom: clamp(2.5rem, 6vw, 4rem);
 }
@@ -910,75 +900,51 @@ p {
 }
 
 .about__stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem 2.4rem;
+    margin-top: 2rem;
 }
 
 .stat {
-    padding: 1.1rem 1.2rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    background: var(--bg-secondary);
-    transition: transform var(--transition-normal), border-color var(--transition-normal);
-}
-
-.stat:hover {
-    transform: translateY(-3px);
-    border-color: var(--border-strong);
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
 }
 
 .stat__value {
-    display: block;
     font-family: var(--font-display);
     font-weight: 800;
-    font-size: 1.9rem;
+    font-size: 1.65rem;
     color: var(--accent-primary);
     line-height: 1.1;
 }
 
 .stat__label {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    letter-spacing: 0.02em;
 }
 
 /* ---------- 9. Skills ---------- */
 .skills__grid {
     display: grid;
-    gap: 1.4rem;
-}
-
-.skill-group {
-    padding: 1.6rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    background: var(--bg-secondary);
-    transition: border-color var(--transition-normal), transform var(--transition-normal);
-}
-
-.skill-group:hover {
-    border-color: var(--border-strong);
-    transform: translateY(-3px);
+    gap: 2.6rem 3rem;
 }
 
 .skill-group__title {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-family: var(--font-mono);
-    color: var(--text-secondary);
-    margin-bottom: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.85rem;
 }
 
 .skill-group__title::before {
     content: "";
     display: inline-block;
-    width: 1.4rem;
+    width: 1.1rem;
     height: 1px;
     background: var(--accent-primary);
-    margin-right: 0.65rem;
+    margin-right: 0.6rem;
     vertical-align: middle;
 }
 
@@ -991,8 +957,7 @@ p {
 .tag {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
-    padding: 0.42rem 0.9rem;
+    padding: 0.4rem 0.85rem;
     border-radius: 999px;
     border: 1px solid var(--border-color);
     background: var(--bg-inset);
@@ -1001,57 +966,14 @@ p {
     transition: transform var(--transition-fast),
                 border-color var(--transition-fast),
                 background-color var(--transition-fast),
-                color var(--transition-fast),
-                box-shadow var(--transition-fast);
-}
-
-.tag::before {
-    content: "";
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 50%;
-    background: var(--text-muted);
-    transition: background-color var(--transition-fast);
-}
-
-.tag[data-level="projects"]::before {
-    background: var(--accent-primary);
-}
-
-.tag[data-level="academic"]::before {
-    background: var(--accent-secondary);
+                color var(--transition-fast);
 }
 
 .tag:hover {
-    transform: scale(1.05);
+    transform: translateY(-1px);
     border-color: var(--accent-primary);
-    background: var(--accent-primary-soft);
-    box-shadow: 0 0 0 3px var(--accent-primary-soft);
+    color: var(--accent-primary);
 }
-
-.skills__legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem;
-    margin-top: 2rem;
-    font-size: 0.82rem;
-    color: var(--text-muted);
-}
-
-.skills__legend li {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.dot {
-    width: 0.45rem;
-    height: 0.45rem;
-    border-radius: 50%;
-}
-
-.dot--academic { background: var(--accent-secondary); }
-.dot--projects { background: var(--accent-primary); }
 
 /* ---------- 10. Projects ---------- */
 .filters {
@@ -1438,59 +1360,27 @@ p {
 
 /* ---------- 12. Highlights ---------- */
 .highlights {
-    display: grid;
-    gap: 1.3rem;
+    display: block;
+    max-width: 44rem;
 }
 
 .highlight {
-    padding: 1.7rem 1.8rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    background: var(--bg-secondary);
-    position: relative;
-    overflow: hidden;
-    transition: transform var(--transition-normal), border-color var(--transition-normal);
+    padding: 1.35rem 0;
+    border-top: 1px solid var(--border-color);
 }
 
-.highlight::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--accent-primary);
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform var(--transition-normal);
-}
-
-.highlight:hover {
-    transform: translateY(-4px);
-    border-color: var(--border-strong);
-}
-
-.highlight:hover::after {
-    transform: scaleY(1);
-}
-
-.highlight__value {
-    font-family: var(--font-display);
-    font-weight: 800;
-    font-size: 2rem;
-    color: var(--accent-primary);
-    line-height: 1;
-    margin-bottom: 0.7rem;
+.highlight:last-child {
+    border-bottom: 1px solid var(--border-color);
 }
 
 .highlight__title {
-    font-size: 1.1rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.08rem;
+    margin-bottom: 0.35rem;
 }
 
 .highlight__desc {
     color: var(--text-secondary);
-    font-size: 0.92rem;
+    font-size: 0.93rem;
 }
 
 /* ---------- 13. Contact ---------- */
