@@ -1652,6 +1652,16 @@ p {
     color: var(--text-secondary);
 }
 
+.site-footer__socials {
+    justify-content: center;
+    margin: 0;
+}
+
+.site-footer__socials .social-link {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
 .site-footer__meta {
     font-family: var(--font-mono);
     font-size: 0.72rem;
