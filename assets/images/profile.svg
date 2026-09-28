@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Portrait placeholder with the initials CSR">
+  <defs><pattern id="g" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/></pattern></defs>
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14171d"/>
+      <stop offset="100%" stop-color="#0d0f13"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#e5a54b" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0d0f13" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="420" height="520" fill="url(#pg)"/>
+  <rect width="420" height="520" fill="url(#g)"/>
+  <rect width="420" height="520" fill="url(#pglow)"/>
+  <circle cx="210" cy="235" r="118" fill="none" stroke="#7b828e" stroke-opacity="0.4" stroke-dasharray="2 6"/>
+  <circle cx="210" cy="235" r="88" fill="none" stroke="#e5a54b" stroke-opacity="0.8" stroke-width="1.5"/>
+  <text x="210" y="252" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="56" letter-spacing="6" fill="#e5a54b">CSR</text>
+  <path d="M150 380 h120" stroke="#5fc9a9" stroke-width="2" stroke-linecap="round"/>
+  <text x="210" y="425" text-anchor="middle" font-family="monospace" font-size="13" letter-spacing="5" fill="#7b828e">CHANDRA · SEKHAR · REDDY</text>
+  <path d="M60 90 l0 -30 30 0" fill="none" stroke="#7b828e" stroke-opacity="0.5"/>
+  <path d="M360 90 l0 -30 -30 0" fill="none" stroke="#7b828e" stroke-opacity="0.5"/>
+  <path d="M60 470 l0 30 30 0" fill="none" stroke="#7b828e" stroke-opacity="0.5"/>
+  <path d="M360 470 l0 30 -30 0" fill="none" stroke="#7b828e" stroke-opacity="0.5"/>
+</svg>
