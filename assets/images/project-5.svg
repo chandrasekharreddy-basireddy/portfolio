@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="this portfolio cover artwork">
+  <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/></pattern></defs>
+  <rect width="800" height="500" fill="#101217"/>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#vign)"/>
+  <defs>
+    <radialGradient id="vign" cx="30%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#e5a54b" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#101217" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0c0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0b0c0f" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(160 100)">
+    <rect x="0" y="0" width="290" height="60" rx="8" fill="none" stroke="#e5a54b" stroke-width="2"/>
+    <text x="22" y="42" font-family="monospace" font-size="30" font-weight="bold" fill="#e5a54b">Aa</text>
+    <rect x="100" y="22" width="120" height="7" rx="3.5" fill="#7b828e" opacity="0.55"/>
+    <rect x="100" y="38" width="80" height="7" rx="3.5" fill="#7b828e" opacity="0.35"/>
+    <g>
+      <rect x="330" y="0" width="60" height="60" rx="8" fill="none" stroke="#7b828e" stroke-opacity="0.5"/>
+      <circle cx="390" cy="30" r="9" fill="#5fc9a9"/>
+      <rect x="330" y="90" width="120" height="34" rx="17" fill="none" stroke="#e5a54b" stroke-width="1.5"/>
+      <rect x="330" y="140" width="76" height="34" rx="17" fill="none" stroke="#5fc9a9" stroke-width="1.5"/>
+    </g>
+    <g fill="none" stroke="#7b828e" stroke-opacity="0.4">
+      <rect x="0" y="110" width="280" height="170" rx="10"/>
+      <path d="M0 160 h280 M140 160 v120"/>
+      <rect x="0" y="200" width="70" height="80" rx="10" stroke-opacity="0.7"/>
+      <rect x="210" y="200" width="70" height="80" rx="10" stroke-opacity="0.7"/>
+    </g>
+    <path d="M112 190 l-14 26 h16 l-8 24 26 -34 h-15 l9 -16 z" fill="#e5a54b" opacity="0.9"/>
+  </g>
+
+  <text x="36" y="470" font-family="monospace" font-size="15" letter-spacing="4" fill="#7b828e">THIS PORTFOLIO</text>
+  <text x="740" y="72" text-anchor="end" font-family="monospace" font-size="15" letter-spacing="4" fill="#7b828e">05</text>
+</svg>
