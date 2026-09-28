@@ -14,8 +14,9 @@
             title: "Portfolio in 3D",
             category: "Development",
             description:
-                "A scroll-driven Three.js world with seasons, animals and real character " +
-                "animation — an explorable, walkable alternative to the classic portfolio page.",
+                "My portfolio, except you walk through it. A scroll-driven Three.js world with " +
+                "seasons, animals and a character that actually animates — built to learn how " +
+                "3D on the web works.",
             image: "assets/images/project-1.svg",
             technologies: ["JavaScript", "Three.js", "WebGL"],
             github: "https://github.com/chandrasekharreddy-basireddy/portfolio-3d",
@@ -27,9 +28,9 @@
             title: "Survival School",
             category: "Development",
             description:
-                "An MCQ-driven learning and gamification platform for universities — courses, " +
-                "timed exams with server-authoritative scoring, points, badges, verifiable " +
-                "certificates, real-time chat and instructor analytics.",
+                "Started as exam practice and quietly became a whole learning platform — timed " +
+                "quizzes the server actually grades, points and badges, real certificates, chat " +
+                "and analytics for instructors.",
             image: "assets/images/project-2.svg",
             technologies: ["Python", "FastAPI", "Next.js", "PostgreSQL", "Redis"],
             github: "https://github.com/chandrasekharreddy-basireddy/survivalschool",
@@ -41,9 +42,9 @@
             title: "Signal-Lite",
             category: "Development",
             description:
-                "A security-first real-time messaging platform: phone/OTP authentication, " +
-                "rotating refresh tokens, server-authoritative access control and WebSocket " +
-                "fan-out over Redis, with PostgreSQL as the source of truth.",
+                "I wanted to understand how real chat systems work, so I built one carefully: " +
+                "phone/OTP login, rotating refresh tokens, WebSocket fan-out over Redis. No AI " +
+                "features, on purpose.",
             image: "assets/images/project-3.svg",
             technologies: ["Python", "FastAPI", "WebSocket", "Redis", "PostgreSQL"],
             github: "https://github.com/chandrasekharreddy-basireddy/Runnerup--chat",
@@ -55,9 +56,9 @@
             title: "SaiU V2 — Student OS",
             category: "Development",
             description:
-                "An offline-first university companion PWA: live timetable ingestion from " +
-                "Google Sheets, conflict detection, calendar export, planning tools and " +
-                "gamification, shipped with automated CI/CD.",
+                "Our campus timetable made no sense, so this app makes sense of it — live data, " +
+                "conflict detection, calendar export, and it works offline when the wifi " +
+                "doesn't.",
             image: "assets/images/project-4.svg",
             technologies: ["JavaScript", "PWA", "Node.js", "GitHub Actions"],
             github: "https://github.com/chandrasekharreddy-basireddy/SaiU-V2",
@@ -69,9 +70,8 @@
             title: "This Portfolio",
             category: "Design",
             description:
-                "The site you're looking at — a dependency-free single-page portfolio in " +
-                "vanilla HTML, CSS and JavaScript, with theming, filtering, validation and " +
-                "accessibility built in.",
+                "The site you're on right now. One HTML page, some CSS, some JavaScript — no " +
+                "frameworks, no build step, and every line written to be read.",
             image: "assets/images/project-5.svg",
             technologies: ["HTML", "CSS", "JavaScript"],
             github: "https://github.com/chandrasekharreddy-basireddy/portfolio",
