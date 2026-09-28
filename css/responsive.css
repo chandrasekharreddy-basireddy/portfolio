@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Portfolio — responsive.css
+   Mobile-first (base styles live in style.css). Tablet → desktop → wide.
+   Breakpoints chosen for this design, not framework defaults.
+   ========================================================================== */
+
+/* ---------- Small phones (<560px): lighter back-to-top + form breathing room ---------- */
+@media (max-width: 559px) {
+    .back-to-top {
+        width: 2.4rem;
+        height: 2.4rem;
+        right: 1rem;
+        bottom: 1rem;
+        opacity: 0.88;
+    }
+
+    .back-to-top.is-visible {
+        opacity: 0.88;
+    }
+
+    .contact__form {
+        padding-bottom: 4.75rem;
+    }
+}
+
+/* ---------- Small phones (≥360px) ---------- */
+@media (min-width: 360px) {
+    .hero__cta .btn {
+        padding-inline: 1.5rem;
+    }
+}
+
+/* ---------- Large phones (≥560px) ---------- */
+@media (min-width: 560px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlight:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Featured project always owns the full row */
+    .project-card--featured {
+        grid-column: 1 / -1;
+    }
+
+    .contact__form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .field--wide {
+        grid-column: 1 / -1;
+    }
+
+    .contact__form .btn {
+        grid-column: 1 / -1;
+    }
+
+    .contact__note {
+        grid-column: 1 / -1;
+    }
+
+    .site-footer__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* ---------- Tablet (≥768px) ---------- */
+@media (min-width: 768px) {
+    .about__grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+        align-items: start;
+    }
+
+    .hero__portrait {
+        width: min(60vw, 380px);
+    }
+
+    .timeline {
+        padding-left: 3rem;
+    }
+
+    .timeline__item {
+        padding-bottom: 3rem;
+    }
+
+    .timeline__node {
+        left: -3rem;
+    }
+}
+
+/* ---------- Laptop (≥1024px) ---------- */
+@media (min-width: 1024px) {
+    .nav__links {
+        display: flex;
+        align-items: center;
+        gap: 1.9rem;
+    }
+
+    .nav__hamburger {
+        display: none;
+    }
+
+    .hero {
+        padding-block: 6rem 3.5rem;
+    }
+
+    .hero__layout {
+        flex-direction: row; /* desktop: text left, visual right */
+        gap: 4rem;
+    }
+
+    .hero__content {
+        flex: 1.1;
+    }
+
+    .hero__visual {
+        flex: 0.9;
+        justify-content: flex-end;
+    }
+
+    .hero__portrait {
+        width: min(34vw, 400px);
+    }
+
+    .hero__scroll {
+        left: auto;
+        right: 2rem;
+        transform: none;
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+    }
+
+    /* Featured project spans the full row */
+    .project-card--featured {
+        grid-column: 1 / -1;
+        grid-template-columns: 1.05fr 1fr;
+    }
+
+    .project-card--featured .project-card__media {
+        aspect-ratio: auto;
+        height: 100%;
+        min-height: 320px;
+        border-bottom: none;
+        border-right: 1px solid var(--border-color);
+    }
+
+    .project-card--featured .project-card__body {
+        padding: 2.2rem 2.4rem;
+        justify-content: center;
+    }
+
+    .timeline {
+        max-width: 40rem;
+    }
+
+    .highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .highlight:last-child {
+        grid-column: auto;
+    }
+
+    .contact__grid {
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 4rem;
+        align-items: start;
+    }
+}
+
+/* ---------- Desktop (≥1280px) ---------- */
+@media (min-width: 1280px) {
+    .skills__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero__title {
+        font-size: clamp(3.2rem, 4.2vw, 4.6rem);
+    }
+}
+
+/* ---------- Large desktop (≥1536px) ---------- */
+@media (min-width: 1536px) {
+    :root {
+        --container-width: 78rem;
+    }
+
+    .section {
+        padding-block: clamp(6rem, 9vw, 10rem);
+    }
+}
+
+/* ---------- Wide-screen guard: never stretch hero text ---------- */
+@media (min-width: 1920px) {
+    .hero__layout {
+        gap: 6rem;
+    }
+}
