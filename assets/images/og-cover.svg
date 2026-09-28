@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/></pattern></defs>
+  <rect width="1200" height="630" fill="#0b0c0f"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="1010" cy="120" r="220" fill="none" stroke="#e5a54b" stroke-opacity="0.25" stroke-width="1.5"/>
+  <circle cx="1010" cy="120" r="150" fill="none" stroke="#e5a54b" stroke-opacity="0.5" stroke-width="1.5"/>
+  <circle cx="1010" cy="120" r="80" fill="none" stroke="#e5a54b" stroke-opacity="0.8" stroke-width="2"/>
+  <circle cx="1010" cy="120" r="8" fill="#e5a54b"/>
+  <path d="M120 300 q60 -80 120 0 t120 0" stroke="#5fc9a9" stroke-width="2" fill="none" opacity="0.6"/>
+  <text x="120" y="250" font-family="monospace" font-size="22" letter-spacing="8" fill="#e5a54b">PORTFOLIO</text>
+  <text x="114" y="360" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="76" letter-spacing="-1" fill="#ecedef">Chandra Sekhar Reddy</text>
+  <text x="120" y="420" font-family="'Segoe UI', sans-serif" font-size="30" fill="#7b828e">Computer Science Student & Creator</text>
+  <text x="120" y="530" font-family="monospace" font-size="18" letter-spacing="4" fill="#7b828e">WEB PLATFORMS · OFFLINE-FIRST APPS · 3D EXPERIENCES</text>
+</svg>
