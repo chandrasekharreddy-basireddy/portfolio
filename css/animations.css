@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Portfolio — animations.css
+   Hero entrance sequence, scroll-reveal classes, stagger, reduced motion.
+   ========================================================================== */
+
+/* ---------- Hero entrance sequence ---------- */
+/* Elements animate once, on load, in a fixed order — no looping, no delay
+   to interactivity (pointer events remain active throughout). */
+.hero-anim {
+    opacity: 0;
+    transform: translateY(22px);
+    animation: hero-rise 0.7s var(--ease-out) forwards;
+    animation-delay: calc(0.09s * var(--d, 0) + 0.1s);
+}
+
+@keyframes hero-rise {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Draw the accent underline after the headline has risen */
+.accent-underline__stroke path {
+    stroke-dasharray: 230;
+    stroke-dashoffset: 230;
+    animation: stroke-draw 0.9s var(--ease-out) 0.75s forwards;
+}
+
+@keyframes stroke-draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ---------- Scroll reveal ---------- */
+/* JS (js/animations.js) adds .is-visible via IntersectionObserver. */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+    opacity: 0;
+    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+    will-change: opacity, transform;
+}
+
+.reveal {
+    transform: translateY(28px);
+}
+
+.reveal-left {
+    transform: translateX(-32px);
+}
+
+.reveal-right {
+    transform: translateX(32px);
+}
+
+.reveal-scale {
+    transform: scale(0.94);
+}
+
+.reveal.is-visible,
+.reveal-left.is-visible,
+.reveal-right.is-visible,
+.reveal-scale.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* ---------- Staggered children ---------- */
+/* Any .stagger container reveals its children in 80ms steps.
+   --i is set inline or assigned by JS. */
+.stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
+    transition-delay: calc(0.08s * var(--i, 0));
+}
+
+.stagger.is-visible > * {
+    opacity: 1;
+    transform: none;
+}
+
+/* Skill tags: personal stagger on top of the group reveal */
+.skill-group__tags .tag {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.45s var(--ease-out), transform 0.45s var(--ease-out),
+                border-color 150ms ease, background-color 150ms ease,
+                box-shadow 150ms ease, color 150ms ease;
+    transition-delay: calc(0.05s * var(--i, 0));
+}
+
+.skill-group.is-visible .tag {
+    opacity: 1;
+    transform: none;
+}
+
+/* ---------- Project filter transition ---------- */
+.project-card {
+    animation: card-in 0.4s var(--ease-out) both;
+}
+
+@keyframes card-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.985);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ---------- Custom cursor ring (added by js/animations.js, desktop only) ---------- */
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent-primary);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* ---------- Focus-visible transition smoothing ---------- */
+a:focus-visible,
+button:focus-visible {
+    transition: outline-color var(--transition-fast);
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    /* Keep all content immediately visible */
+    .hero-anim,
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale,
+    .stagger > *,
+    .skill-group__tags .tag {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .accent-underline__stroke path {
+        stroke-dashoffset: 0;
+    }
+
+    .hero__scroll svg {
+        animation: none;
+    }
+}
