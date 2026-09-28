@@ -51,7 +51,7 @@ const portfolioConfig = {
     university: "Sai University",
     email: "srinivasabasireddy06@gmail.com",
     github: "https://github.com/chandrasekharreddy-basireddy",
-    linkedin: null,       // set your LinkedIn URL to show the icon
+    linkedin: "https://www.linkedin.com/in/chandra-sekhar-reddy-basireddy-5733a2385",
     resumePath: "assets/resume.pdf"
 };
 ```
@@ -93,7 +93,7 @@ Replace `assets/resume.pdf` with your real resume file (keep the name `resume.pd
 ### Configure GitHub / LinkedIn / Email
 
 - **GitHub** — `portfolioConfig.github` in `js/main.js` (also used by the social icons).
-- **LinkedIn** — set `portfolioConfig.linkedin` (currently `null`, so the icon is hidden rather than pointing at a wrong URL).
+- **LinkedIn** — `portfolioConfig.linkedin` in `js/main.js` (currently set; update it there if your handle changes).
 - **Email** — `portfolioConfig.email` and `CONTACT_EMAIL` in `js/contact.js`.
 
 ### Add achievements / timeline entries
